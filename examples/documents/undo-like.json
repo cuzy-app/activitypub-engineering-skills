@@ -1,0 +1,12 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://humhub.example/activitypub/actor/2f8e1c3a/likes/a1b2c3/undo",
+  "type": "Undo",
+  "actor": "https://humhub.example/activitypub/actor/2f8e1c3a",
+  "object": {
+    "id": "https://humhub.example/activitypub/actor/2f8e1c3a/likes/a1b2c3",
+    "type": "Like",
+    "actor": "https://humhub.example/activitypub/actor/2f8e1c3a",
+    "object": "https://mastodon.example/users/bob/statuses/1"
+  }
+}

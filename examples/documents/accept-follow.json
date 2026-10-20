@@ -1,0 +1,12 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://humhub.example/activitypub/actor/2f8e1c3a/accepts/77aa01",
+  "type": "Accept",
+  "actor": "https://humhub.example/activitypub/actor/2f8e1c3a",
+  "object": {
+    "id": "https://mastodon.example/2b9c1e",
+    "type": "Follow",
+    "actor": "https://mastodon.example/users/bob",
+    "object": "https://humhub.example/activitypub/actor/2f8e1c3a"
+  }
+}

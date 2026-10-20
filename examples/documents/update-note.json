@@ -1,0 +1,26 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://humhub.example/activitypub/actor/2f8e1c3a/notes/42#updates/9a1b",
+  "type": "Update",
+  "actor": "https://humhub.example/activitypub/actor/2f8e1c3a",
+  "to": [
+    "https://www.w3.org/ns/activitystreams#Public"
+  ],
+  "cc": [
+    "https://humhub.example/activitypub/actor/2f8e1c3a/followers"
+  ],
+  "object": {
+    "id": "https://humhub.example/activitypub/actor/2f8e1c3a/notes/42",
+    "type": "Note",
+    "attributedTo": "https://humhub.example/activitypub/actor/2f8e1c3a",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "cc": [
+      "https://humhub.example/activitypub/actor/2f8e1c3a/followers"
+    ],
+    "content": "<p>Hello, edited</p>",
+    "published": "2026-10-20T12:00:00Z",
+    "updated": "2026-10-20T12:30:00Z"
+  }
+}

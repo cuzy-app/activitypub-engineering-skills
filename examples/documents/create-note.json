@@ -1,0 +1,35 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://humhub.example/activitypub/actor/2f8e1c3a/notes/42/activity",
+  "type": "Create",
+  "actor": "https://humhub.example/activitypub/actor/2f8e1c3a",
+  "to": [
+    "https://www.w3.org/ns/activitystreams#Public"
+  ],
+  "cc": [
+    "https://humhub.example/activitypub/actor/2f8e1c3a/followers",
+    "https://mastodon.example/users/bob"
+  ],
+  "object": {
+    "id": "https://humhub.example/activitypub/actor/2f8e1c3a/notes/42",
+    "type": "Note",
+    "attributedTo": "https://humhub.example/activitypub/actor/2f8e1c3a",
+    "to": [
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "cc": [
+      "https://humhub.example/activitypub/actor/2f8e1c3a/followers",
+      "https://mastodon.example/users/bob"
+    ],
+    "content": "<p>Hello <span class=\"h-card\"><a href=\"https://mastodon.example/@bob\" class=\"u-url mention\">@<span>bob</span></a></span></p>",
+    "url": "https://humhub.example/content/perma?id=42",
+    "published": "2026-10-20T12:00:00Z",
+    "tag": [
+      {
+        "type": "Mention",
+        "href": "https://mastodon.example/users/bob",
+        "name": "@bob@mastodon.example"
+      }
+    ]
+  }
+}

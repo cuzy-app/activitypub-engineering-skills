@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://humhub.example/activitypub/actor/2f8e1c3a/follows/6f1c2d",
+  "type": "Follow",
+  "actor": "https://humhub.example/activitypub/actor/2f8e1c3a",
+  "object": "https://mastodon.example/users/bob"
+}

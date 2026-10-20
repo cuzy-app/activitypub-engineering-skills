@@ -1,0 +1,17 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://humhub.example/activitypub/actor/2f8e1c3a/notes/42/delete",
+  "type": "Delete",
+  "actor": "https://humhub.example/activitypub/actor/2f8e1c3a",
+  "to": [
+    "https://www.w3.org/ns/activitystreams#Public"
+  ],
+  "cc": [
+    "https://humhub.example/activitypub/actor/2f8e1c3a/followers"
+  ],
+  "object": {
+    "id": "https://humhub.example/activitypub/actor/2f8e1c3a/notes/42",
+    "type": "Tombstone",
+    "formerType": "Note"
+  }
+}

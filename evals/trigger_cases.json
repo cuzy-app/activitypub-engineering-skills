@@ -1,0 +1,16 @@
+[
+  {"prompt": "Implement HTTP signature verification for an ActivityPub inbox.", "expect": "activate"},
+  {"prompt": "Mastodon users can't find our accounts by @user@domain. What should WebFinger return?", "expect": "activate"},
+  {"prompt": "Our Accept for a Follow is ignored by Mastodon; the follow stays pending.", "expect": "activate"},
+  {"prompt": "How should we handle an Announce from a Lemmy community?", "expect": "activate"},
+  {"prompt": "Which FEP describes discovering the instance actor, and is it final?", "expect": "activate"},
+  {"prompt": "Review this Create{Note} JSON before we start sending it to remote servers.", "expect": "activate"},
+  {"prompt": "Add client-to-server outbox posting to our ActivityPub server.", "expect": "activate"},
+  {"prompt": "Add ActivityPub federation to my HumHub module: where do the pieces go?", "expect": "activate"},
+  {"prompt": "Build a Mastodon mobile client using its REST API and OAuth.", "expect": "not_activate"},
+  {"prompt": "Set up RSS feeds for my blog.", "expect": "not_activate"},
+  {"prompt": "Configure an Nginx reverse proxy for a Node.js app.", "expect": "not_activate"},
+  {"prompt": "Add a migration for the remote actor table in my HumHub module.", "expect": "handoff"},
+  {"prompt": "Where do I register the event that federates new posts in my HumHub module's config.php?", "expect": "handoff"},
+  {"prompt": "Write a Codeception test for the ActivityPub module's inbox job in HumHub.", "expect": "handoff"}
+]

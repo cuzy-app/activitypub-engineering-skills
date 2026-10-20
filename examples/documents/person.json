@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1"
+  ],
+  "id": "https://humhub.example/activitypub/actor/2f8e1c3a",
+  "type": "Person",
+  "preferredUsername": "alice",
+  "name": "Alice Example",
+  "summary": "<p>Gardener and HumHub user.</p>",
+  "url": "https://humhub.example/u/alice/",
+  "inbox": "https://humhub.example/activitypub/actor/2f8e1c3a/inbox",
+  "outbox": "https://humhub.example/activitypub/actor/2f8e1c3a/outbox",
+  "followers": "https://humhub.example/activitypub/actor/2f8e1c3a/followers",
+  "following": "https://humhub.example/activitypub/actor/2f8e1c3a/following",
+  "endpoints": {
+    "sharedInbox": "https://humhub.example/activitypub/inbox"
+  },
+  "icon": {
+    "type": "Image",
+    "mediaType": "image/jpeg",
+    "url": "https://humhub.example/uploads/profile_image/2f8e1c3a.jpg"
+  },
+  "published": "2026-06-22T10:00:00Z",
+  "publicKey": {
+    "id": "https://humhub.example/activitypub/actor/2f8e1c3a#main-key",
+    "owner": "https://humhub.example/activitypub/actor/2f8e1c3a",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAexample\n-----END PUBLIC KEY-----\n"
+  }
+}

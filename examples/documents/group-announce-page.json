@@ -1,0 +1,36 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://lemmy.example/activities/announce/5d1",
+  "type": "Announce",
+  "actor": "https://lemmy.example/c/gardening",
+  "to": [
+    "https://www.w3.org/ns/activitystreams#Public"
+  ],
+  "cc": [
+    "https://lemmy.example/c/gardening/followers"
+  ],
+  "object": {
+    "id": "https://lemmy.example/activities/create/88e",
+    "type": "Create",
+    "actor": "https://lemmy.example/u/carol",
+    "to": [
+      "https://lemmy.example/c/gardening",
+      "https://www.w3.org/ns/activitystreams#Public"
+    ],
+    "audience": "https://lemmy.example/c/gardening",
+    "object": {
+      "id": "https://lemmy.example/post/88",
+      "type": "Page",
+      "attributedTo": "https://lemmy.example/u/carol",
+      "name": "Tomato blight",
+      "to": [
+        "https://lemmy.example/c/gardening",
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "audience": "https://lemmy.example/c/gardening",
+      "content": "<p>Any tips?</p>",
+      "mediaType": "text/html",
+      "published": "2026-10-19T08:00:00Z"
+    }
+  }
+}
