@@ -94,6 +94,7 @@ def test_invalid_trigger_case(make_bundle):
     assert "S032" in codes(vs.validate(bundle), "error")
 
 
-def test_trigger_cases_cover_all_expectations(root):
+def test_trigger_cases_cover_both_expectations(root):
+    # Single combined skill: nothing is handed off, so only these two outcomes apply.
     cases = json.loads((root / "evals" / "trigger_cases.json").read_text())
-    assert {c["expect"] for c in cases} == {"activate", "not_activate", "handoff"}
+    assert {c["expect"] for c in cases} == {"activate", "not_activate"}

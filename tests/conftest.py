@@ -65,6 +65,41 @@ def create_note():
 
 
 @pytest.fixture
+def make_module(tmp_path):
+    """Build a valid minimal module in tmp_path and return its path."""
+
+    def factory(manifest_overrides=None, config=None, migrations=None, extra_php=None):
+        module = tmp_path / "mod"
+        module.mkdir()
+        manifest = {
+            "id": "demo",
+            "version": "1.0.0",
+            "name": "Demo",
+            "description": "Demo module",
+            "humhub": {"minVersion": "1.16"},
+        }
+        manifest.update(manifest_overrides or {})
+        manifest = {k: v for k, v in manifest.items() if v is not None}
+        (module / "module.json").write_text(json.dumps(manifest))
+        (module / "composer.json").write_text(json.dumps({"type": "humhub-module"}))
+        (module / "Module.php").write_text("<?php\nnamespace demo;\nclass Module {}\n")
+        default_config = (
+            "<?php\nreturn ['id' => 'demo', 'class' => 'demo\\\\Module', 'namespace' => 'demo'];\n"
+        )
+        (module / "config.php").write_text(config if config is not None else default_config)
+        (module / "tests").mkdir()
+        if migrations:
+            (module / "migrations").mkdir()
+            for filename, body in migrations.items():
+                (module / "migrations" / filename).write_text(body)
+        for filename, body in (extra_php or {}).items():
+            (module / filename).write_text(body)
+        return module
+
+    return factory
+
+
+@pytest.fixture
 def make_bundle(tmp_path, root):
     """Copy the skill bundle into tmp_path so tests can break it safely."""
     import shutil

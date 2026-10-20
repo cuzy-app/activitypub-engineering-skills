@@ -1,0 +1,10 @@
+{
+  "id": "minimal",
+  "version": "0.1.0",
+  "name": "Minimal example",
+  "description": "Fixture module used to test the structural validator.",
+  "keywords": ["example"],
+  "humhub": {
+    "minVersion": "1.16"
+  }
+}

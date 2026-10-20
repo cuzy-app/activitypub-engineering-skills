@@ -12,6 +12,16 @@ Read on 2026-10-20 unless noted. References cite these inline.
   This skill reuses its **outline** (concepts → messaging and side effects → activity
   types) and its resource list; the text is written independently.
 
+## HumHub material
+
+- The `humhub-*` references, `validate_module.py` and the example module come from a
+  HumHub engineering skill skeleton (0.1.0) prepared alongside this skill and merged in
+  0.2.0. Several items still carry "Verify" notes and must be checked against the
+  installed HumHub core.
+- HumHub module coding standards: <https://github.com/humhub/module-coding-standards>
+- HumHub core source of the targeted version (`protected/humhub/`) is the authority for
+  class names, events and base classes.
+
 ## Specifications
 
 - ActivityPub W3C Recommendation: <https://www.w3.org/TR/activitypub/>

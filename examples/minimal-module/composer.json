@@ -1,0 +1,10 @@
+{
+  "name": "example/humhub-minimal",
+  "type": "humhub-module",
+  "description": "Fixture module used to test the structural validator.",
+  "config": {
+    "platform": {
+      "php": "8.2"
+    }
+  }
+}

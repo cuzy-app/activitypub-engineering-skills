@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Install the knowledge-only skill bundle into an agent's skills directory.
 
-Copies SKILL.md, references/ and scripts/validate_activitypub.py. It never edits client
+Copies SKILL.md, references/ and the two validator scripts. It never edits client
 settings and never registers hooks. An existing installation is replaced only with
 --force, and the replacement is staged before the old copy is touched.
 """
@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 SKILL_NAME = "activitypub-engineering"
-BUNDLE_FILES = ("SKILL.md", "scripts/validate_activitypub.py")
+BUNDLE_FILES = ("SKILL.md", "scripts/validate_activitypub.py", "scripts/validate_module.py")
 BUNDLE_DIRS = ("references",)
 
 # Defaults, not guarantees. See docs/CLIENT_COMPATIBILITY.md.

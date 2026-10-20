@@ -1,9 +1,9 @@
 # Mapping a social platform to ActivityPub
 
 Patterns for exposing an existing platform's users, groups, posts, comments and likes,
-written with HumHub in mind but platform-neutral. Where the code lives (events, jobs,
-migrations) is the companion `humhub-engineering` skill's job; this file covers the
-document shapes and the rules that keep federation safe.
+written with HumHub in mind but platform-neutral. Where the code lives in a HumHub
+module (events, jobs, migrations) is covered by the `humhub-*` references; this file
+covers the document shapes and the rules that keep federation safe.
 
 ## Entities
 

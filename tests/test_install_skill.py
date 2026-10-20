@@ -15,6 +15,8 @@ def test_install_copies_knowledge_only_bundle(root, tmp_path):
     assert (target / "SKILL.md").is_file()
     assert (target / "references" / "concepts.md").is_file()
     assert (target / "scripts" / "validate_activitypub.py").is_file()
+    assert (target / "scripts" / "validate_module.py").is_file()
+    assert (target / "references" / "humhub-module-structure.md").is_file()
     assert not (target / "scripts" / "install_skill.py").exists()
     assert not (target / "tests").exists()
 
